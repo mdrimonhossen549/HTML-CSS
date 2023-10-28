@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+    <style>
+    /* Basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    background-color: #111231; /* Default header color */
+    padding: 40px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.nav ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+.nav li:last-child{
+    margin:0;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.nav a:hover{
+    background-color: green;
+}
+.active{
+  background-color: green;
+}
+
+.header-content {
+    text-align: center;
+    flex-grow: 1;
+    margin: 100px 0px;
+}
+
+.text-content {
+    color: #fff;
+}
+.header-content h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.header-content p{
+    padding: 20px 0;
+}
+.header-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red; /* Default button color */
+    color: white;
+    text-decoration: none;
+    transition: background-color 3s ease; /* Color change effect */
+}/*
+
+.slider {
+    display: none;
+}
+
+.slide-left,
+.slide-right {
+    font-size: 20px;
+    background-color: 
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}*/
+.section {
+    background-color: #569754;
+    color:#fff;
+    padding: 80px 40px;
+    text-align: center;
+    
+}
+
+.section-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-description {
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0;
+    padding:30px 0px;
+    
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.columns {
+    width: calc(25% - 20px);
+    background-color: #475667;
+    border: 1px solid #ddd;
+    padding: 20px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+.house{
+    color: #fff;
+}
+.columns:last-child {
+ 
+}
+.icon i{
+    font-size: 36px;
+    color: #007bff;
+}
+
+.column-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff;
+    
+}
+
+.column-description {
+    font-size: 14px;
+    color: #fff;
+}
+.column-container .columns p{
+    color: #fff;
+    padding:0 20px;
+}
+ .sections{
+            background-color: #348769;
+            color: white;
+            padding: 40px;
+        }
+        .sections:after {
+            content:"";
+            clear: both;
+            display: table;
+        }
+        /* Global CSS for centering items */
+       /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }*/
+         .section-col{
+            display: block;
+            
+        }
+
+        /* Create a flex container for the first row with 3 columns */
+        .row1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+         }   
+             /* Add the top margin to the first column */
+        
+        
+
+        /* Style each column in the first row */
+        .row1 .column {
+            width: 200px;
+            height:300px;
+            color:#fff;
+            margin: 0 20px;
+            margin-top: -100px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+       /* .column p{
+            color: #fff;
+        }*/
+        .col-1{
+            background:red;
+        }
+        .col-2{
+            background: black;
+        }
+        .col-3{
+            background:blue;
+        }
+
+        /* Create a second row with 2 columns */
+         .row2 {
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            margin: 100px 0;
+            
+        }
+        .row2 .column{
+            background-color: #987977;
+            padding: 20px 0px;
+            margin: 40px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        /* Style the columns in the second row */
+        /*.row2 .column {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px;
+        }*/
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p{
+            color: #fff;
+        }
+        /* Make footer responsive using media queries */
+        
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header-nav{
+        display: block;
+    }
+    .logo{
+      width:40px;
+      margin:0 auto;
+    }
+
+    .nav  {
+        margin-top: 10px;
+        margin:0 auto;
+    }
+
+    .header-content {
+        margin-top: 30px;
+        
+    }
+    .header-content h1{
+        font-size:20px;
+        margin-top:100px;
+    }
+    . section-title{
+        font-size: 20px
+    }
+    .columns {
+        width: calc(100% - 20px);
+        margin: 10px 0;
+        
+    }
+   
+    .row2{ 
+        flex-direction:column;
+        margin:100px 0;
+        
+    }
+    .row2 .column{
+        width:100%;
+        margin:20px 0;
+    }
+   /* .row2 .column:last-child{
+        margin-right: 0;
+    }*/
+    .footer {
+        padding: 20px;
+    }
+
+        /* Style the links in the footer */
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+      <div class="header-nav">
+        <div class="logo">
+            Logo
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+        <div class="header-content">
+            <div class="text-content">
+                <h1>"Eco-Friendly Gardening Tips"</h1>
+                <p>Discover sustainable gardening practices and eco-friendly techniques to create a beautiful garden while minimizing your environmental footprint.
+                </p>
+                <a href="#" class="header-button">Learn More</a>
+            </div>
+        </div>
+    </header>
+        <section class="section">
+        <div class="section-content">
+            <h2 class="section-title">"Sleek & Modern Web Design"</h2>
+            <p class="section-description">"Elevate your online presence with our cutting-edge web design services. We specialize in creating sleek, user-friendly, and visually captivating websites that leave a lasting impression. Let's bring your digital vision to life!"</p>
+        </div>
+        <div class="column-container">
+            <div class="columns icon">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <h2 class="column-title">Coffee Break</h2>
+                <p class="column-description">Take a moment to relax and rejuvenate with a warm cup of coffee or tea, and savor the tranquility it brings to your day.</p>
+            </div>
+            <div class="columns icon">
+                <i class="fa-solid fa-landmark"></i>
+                <h2 class="column-title"> Explore Famous Sites</h2>
+                <p class="column-description"> Discover iconic landmarks and historical sites that captivate the imagination and tell the stories of our world's rich heritage.</p>
+            </div>
+            <div class="columns icon">
+                <i class="fa-solid fa-user"></i>
+                <h2 class="column-title">User Profile</h2>
+                <p class="column-description">Manage your personal account, customize your preferences, and connect with others in our user-friendly platform.</p>
+            </div>
+            <div class="columns icon">
+                <i class="fa-solid fa-house"></i>
+                <h2 class="column-title">Find Your Dream</h2>
+                <p class="column-description"> Home Search through our extensive listings to find the perfect house that suits your needs and turns your dream of home ownership into a reality.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sections">
+   <div class="section-col">
+     <!-- First Row with 3 Columns -->
+     <div class="row1">
+        <div class="column col-1">
+            <!-- Column 1 Content -->
+        </div>
+        <div class="column col-2">
+            <!-- Column 2 Content -->
+        </div>
+        <div class="column col-3">
+            <!-- Column 3 Content -->
+        </div>
+    </div>
+
+    <!-- Second Row with 2 Centered Columns -->
+    <div class="row2">
+        <div class="column">
+            <!-- Column 1 Content -->
+            <h2>"Sleek and Modern"</h2>
+            <p>"Experience a cutting-edge web design that combines elegance with functionality. Our designs are tailored to make a lasting impression."</p>
+        </div>
+        <div class="column">
+            <!-- Column 2 Content -->
+            <h2>"Responsive & Mobile-Ready"</h2>
+            <p>"Your website will look stunning on all devices. Our responsive designs guarantee a seamless experience on desktops, tablets, and smartphones."</p>
+        </div>
+    </div>
+   </div>
+  </section>
+  <footer>
+    <div class="footer">
+        <p>&copy; 2023 Your Website</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+  
+    <script></script>
+</body>
+</html>
