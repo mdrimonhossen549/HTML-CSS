@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* styles.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height:vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a{
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    margin: 20px 0;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+.header-model {
+    /*position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+    text-align: center;
+  
+}
+
+.header-model h1 {
+    font-size: 36px;
+}
+
+.header-model p {
+    font-size: 18px;
+}
+.container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 50%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style for the first column */
+        .column:nth-child(odd) {
+            background-color: #3498db;
+            color: white;
+           
+        }
+
+        /* Style for the second column */
+        .column:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .clear-fex:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-div {
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-model h1{
+        font-size: 20px;
+    }
+    .header-model p{
+        font-size: 14px;
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+    .column {
+                flex: 100%;
+            }
+     footer {
+        flex-direction: column;
+    }
+}
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a>LOGO</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+        <div class="header-model">
+            <h1>Elevate Your Online Presence with Stunning Website Designs</h1>
+            <p>Welcome to a world of captivating website designs that leave a lasting impression. Our expert team crafts visually appealing, user-friendly, and responsive websites that perfectly represent your brand. From sleek and modern to creative and unique, we'll transform your vision into a digital masterpiece. Explore our portfolio and discover the power of exceptional web design.</p>
+        </div>
+    </header>
+    <section>
+    <div class="container">
+        <!-- First Row -->
+        <div class="column">
+            <h2>Sleek and Modern Website Designs</h2>
+            <p>Explore our portfolio of cutting-edge website designs that combine aesthetics with functionality. Get inspired by our innovative solutions for a digital world.</p>
+        </div>
+        <div class="column">
+            <h2>User-Centric Web Design Services</h2>
+            <p>We prioritize your audience's needs with our user-centric web design services. Elevate your online presence and create a seamless user experience that keeps visitors engaged.</p>
+        </div>
+
+        <!-- Second Row -->
+        <div class="column">
+            <h2>Custom Web Design Tailored to Your Brand</h2>
+            <p>Your website is your brand's digital face. Let us craft a custom web design that reflects your unique identity and helps you stand out in the crowded online landscape.</p>
+        </div>
+        <div class="column">
+            <h2>Responsive Web Design for Every Device</h2>
+            <p>Our responsive web design ensures your site looks stunning on any screen, from smartphones to desktops. Stay ahead of the curve with a website that adapts to your audience.</p>
+        </div>
+    </div>
+    </section>
+    <footer class="clear-fex">
+      <div class="footer-div">
+            <h3>About Us</h3>
+            <p>Elevate your online presence with SleekWeb Designs. We specialize in creating stunning and user-friendly websites tailored to your unique needs.</p>
+        </div>
+        <div class="footer-div">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Rest of your website content goes here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
