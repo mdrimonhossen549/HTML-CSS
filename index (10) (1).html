@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* scroll down JavaScript*/
+        
+         
+             
+               
+    .item {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    
+    
+        li, a{
+            text-decoration:none;
+            list-style-type:none;
+         }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center ;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+
+    <header class="item">
+        <h1>Your Website</h1>
+    
+
+    <nav class="item">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </nav>
+    </header>
+    <section class="item">
+        <i class="fas fa-code"></i>
+        <h2>QuantumSwift: Harnessing Quantum Computing for High-Performance Swift Applications</h2>
+        <p>Explore the cutting-edge integration of quantum computing with the Swift programming language, unlocking unprecedented speed and efficiency for a new era of software development. Dive into quantum algorithms, quantum data structures, and seamless Swift-Quantum API interactions, revolutionizing how we approach complex computational problems. Join the future of programming with QuantumSwift!</p>
+    </section>
+
+    <section class="item">
+        <i class="fas fa-desktop item"></i>
+        <h2>QuantumSwift: Harnessing Quantum Computing for High-Performance Swift Applications</h2>
+        <p class="item">Explore the cutting-edge integration of quantum computing with the Swift programming language, unlocking unprecedented speed and efficiency for a new era of software development. Dive into quantum algorithms, quantum data structures, and seamless Swift-Quantum API interactions, revolutionizing how we approach complex computational problems. Join the future of programming with QuantumSwift!</p>
+    </section>
+
+    <section class= " item">
+        <i class="fas fa-mobile-alt item"></i>
+        <h2 class="item">QuantumSwift: Harnessing Quantum Computing for High-Performance Swift Applications</h2>
+        <p class="item ">Explore the cutting-edge integration of quantum computing with the Swift programming language, unlocking unprecedented speed and efficiency for a new era of software development. Dive into quantum algorithms, quantum data structures, and seamless Swift-Quantum API interactions, revolutionizing how we approach complex computational problems. Join the future of programming with QuantumSwift!</p>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#" class="fab fa-facebook"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-instagram"></a></li>
+        </ul>
+    </footer>
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const items = document.querySelectorAll('.item');
+
+      function checkVisibility() {
+        items.forEach((item) => {
+          const position = item.getBoundingClientRect();
+
+          // Check if the item is in the viewport
+          if (position.top < window.innerHeight) {
+            item.style.opacity = 1;
+            item.style.transform = 'translateY(0)';
+          }
+        });
+      }
+
+      // Initial check
+      checkVisibility();
+
+      // Listen for scroll events
+      window.addEventListener('scroll', checkVisibility);
+    });
+  </script>
+</body>
+</html>
