@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clear-fex{
+            content:"";
+            display:block;
+            clear: both;
+            overflow: hidden;
+        }
+        /* scroll down JavaScript*/
+        
+         
+             
+               
+    .item {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    
+    
+        li, a{
+            text-decoration:none;
+            list-style-type:none;
+         }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center ;
+        }
+        /*product section start here */
+        .product-section{
+            background:#fff/*#693865*/;
+        }
+        .product-item{
+            float:left;
+            width:23%;
+            height:;
+            border:1px solid #333331;
+            margin-right:20px;
+            margin-bottom:20px;
+            background:#fff;
+            transition:all 0.3s;
+            
+        }
+        .product-item:hover{
+            box-shadow:8px 10px 8px #454545;
+        }
+        .product-item:last-child{
+            margin-right:0;
+        }
+        .product-items{
+            align-items: center;
+            text-align: center;
+            /*display:flex;
+            justify-content: space-around;*/
+        }
+        .product-one{
+            width:100%;
+            height:100px;
+            background-color:#333334;
+        }
+        
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer ul li{
+            display: inline;
+            padding:5px 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .product-item{
+                width:46%;
+                
+                
+            }
+            .product-item:nth-child(2){
+                margin-right:0;
+            }
+           .product-items{
+                padding:0;
+                margin-left:;
+           } 
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+
+    <header class="item">
+        <h1>Your Website</h1>
+    
+
+    <nav class="item">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </nav>
+    </header>
+    <section class="product-section clear-fex">
+      <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+      </div>
+      <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+      
+      </div>
+       <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+      
+      </div>
+      <div></div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#" class="fab fa-facebook"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-instagram"></a></li>
+        </ul>
+    </footer>
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const items = document.querySelectorAll('.item');
+
+      function checkVisibility() {
+        items.forEach((item) => {
+          const position = item.getBoundingClientRect();
+
+          // Check if the item is in the viewport
+          if (position.top < window.innerHeight) {
+            item.style.opacity = 1;
+            item.style.transform = 'translateY(0)';
+          }
+        });
+      }
+
+      // Initial check
+      checkVisibility();
+
+      // Listen for scroll events
+      window.addEventListener('scroll', checkVisibility);
+    });
+  </script>
+</body>
+</html>
