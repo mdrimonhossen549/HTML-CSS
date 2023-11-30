@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clear-fex{
+            content:"";
+            display:block;
+            clear: both;
+            overflow: hidden;
+        }
+        /* scroll down JavaScript*/
+        
+         
+             
+               
+    .item {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    
+    
+        li, a{
+            text-decoration:none;
+            list-style-type:none;
+         }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center ;
+        }
+        /*product section start here */
+        .product-section{
+            background:#918273;
+        }
+        .product-item{
+            float:left;
+            width:23%;
+            height:;
+            border:none;
+            margin-right:20px;
+            margin-bottom:20px;
+            background:#fff;
+            transition:all 0.3s;
+            
+        }
+        .product-item:hover{
+            box-shadow:8px 10px 8px #454545;
+        }
+        .product-item:last-child{
+            margin-right:0;
+        }
+        .product-items{
+            align-items: center;
+            text-align: center;
+            /*display:flex;
+            justify-content: space-around;*/
+        }
+        .product-one{
+            width:100%;
+            height:100px;
+            background-color:#fff456;
+        }
+        
+        /* change background-color 2s later */
+        .color-animation-sec{
+            padding:0;
+        }
+        .color-animation{
+            width:100%;
+            height:35vh;
+            background-color: red;
+            color: white;
+            text-align: center;
+            transition: background-color 1s;
+         }  
+         /* teem-section start */
+         .teem-section{
+             background-color:#737376;
+         }
+         .teem-service-info{}
+         
+         .teem-service-info .teem-services{
+             display:flex;
+             justify-content:space-between;
+         }
+         .teem-service{
+             text-align: left;
+             
+         }
+         .teem-service p{
+             margin-left:85px;
+             font-size:14px;
+         }
+         .teem-img img{
+             width:50px;
+             height:50px;
+             background:#33f7f3;
+             border-radius:50%;
+             float: left;
+             margin-top:25px;
+             margin-right:20px;
+             padding:10px;
+         }      
+         /*footer start hear*/
+         footer {
+             background-color: #333;
+             color: #fff;
+             text-align: center;
+             padding: 20px;
+         }
+         .footer-section{
+             display: flex;
+             justify-content:space-between; 
+             
+         }
+         .footer-menu{
+             display:flex;
+         }
+         .footer-menu ul{
+             margin-right:30px;
+             list-style:none;
+             text-align:left;
+             font-size:20px;
+         }
+         .footer-menu ul:last-child{
+              margin-right:0;
+         }
+         
+         
+         .footer-menu ul li:hover{
+             text-decoration:underline;
+             margin-bottom: 5px;
+         }
+
+         .footer-icon i{
+             font-size:30px;
+             padding:3px;
+             transition:all 0.5s
+         }
+         .footer-icon i:hover{
+             font-size: 34px;
+         }
+              
+        
+
+      /*  footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer ul li{
+            display: inline;
+            padding:5px 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }*/
+
+        @media only screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .product-item{
+                width:46%;
+                
+                
+            }
+            .product-item:nth-child(2){
+                margin-right:0;
+            }
+           .product-items{
+                padding:0;
+                margin-left:;
+           } 
+           /* teem-section start*/
+           .teem-service-info .teem-services{
+                flex-direction: column;
+           }
+           .teem-img img{
+                padding: 0;
+           }
+           .teem-service p{
+                margin-left:70px;
+         }
+         /*footer-section start hear*/
+           .footer-menu{
+                margin-bottom:20px;
+           }
+           .footer-menu ul li{
+                font-size:12px;
+           }
+           .footer-menu ul{
+             margin-right:0px;
+           }
+           .footer-icon i{
+                font-size:20px;
+           }
+           
+           }
+           .footer-icon i:hover{
+                font-size:24px;
+           }
+           
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+
+    <header class="item">
+        <h1>Your Website</h1>
+    
+
+    <nav class="item">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </nav>
+    </header>
+    <section class="product-section clear-fex">
+      <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-1</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-2</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-3</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-4</h3>
+         <p>this is my fast product</p>
+       </div>
+      </div>
+      <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-5</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-6</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-7</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-8</h3>
+         <p>this is my fast product</p>
+       </div>
+      
+      </div>
+       <div class="product-items">
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-9</h3>
+         <p>this is my fast product</p>
+       </div>
+        <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-10</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-11</h3>
+         <p>this is my fast product</p>
+       </div>
+       <div class="product-item">
+         <div class="product-one"></div>
+         <h3>Product-12</h3>
+         <p>this is my fast product</p>
+       </div>
+      
+      </div>
+      <div></div>
+    </section>
+    <section class="color-animation-sec">
+       <div class="color-animation" id="color-animation"></div>
+    </section>
+    <section class="teem-section">
+     <div class="teem-service-info">
+      <div class="teem-services">
+        <div class="teem-service">
+          <div class="teem-img"><img></img></div>
+          <h1>CEO</h1>
+          <p>Creating a Content Management System (CMS) involves several steps and can vary depending on your specific requirements and the technologies you choose to use. Here's a general guide to help you get started</p>
+        </div>
+        <div class="teem-service">
+          <div class="teem-img"><img></img></div>
+          <h1>Manager</h1>
+          <p>Creating a Content Management System (CMS) involves several steps and can vary depending on your specific requirements and the technologies you choose to use. Here's a general guide to help you get started</p>
+        </div>
+      </div>
+       <div class="teem-services">
+        <div class="teem-service">
+          <div class="teem-img"><img></img></div>
+          <h1>CEO</h1>
+          <p>Creating a Content Management System (CMS) involves several steps and can vary depending on your specific requirements and the technologies you choose to use. Here's a general guide to help you get started:</p>
+        </div>
+        <div class="teem-service">
+          <div class="teem-img"><img></img></div>
+          <h1>Manager</h1>
+          <p>Creating a Content Management System (CMS) involves several steps and can vary depending on your specific requirements and the technologies you choose to use. Here's a general guide to help you get started:</p>
+        </div>
+       </div>
+     </div>
+    </section>
+    <section>
+    </section>
+   <footer>
+     <div class="footer-section">
+       <div class="footer-menu">
+          <ul>
+           <li>Home</li>
+           <li>About</li>
+           <li>Service</li>
+           <li>Contact</li>
+           <li>Tram's</li>
+         </ul>
+         <ul>
+           <li>Company</li>
+           <li>Office</li>
+           <li>Teem</li>
+           <li>Help center</li>
+           <li>Privacy</li>
+         </ul>
+       </div>
+       <div class="footer-icon">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></a>
+        <a><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+     </div>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const items = document.querySelectorAll('.item');
+
+      function checkVisibility() {
+        items.forEach((item) => {
+          const position = item.getBoundingClientRect();
+
+          // Check if the item is in the viewport
+          if (position.top < window.innerHeight) {
+            item.style.opacity = 1;
+            item.style.transform = 'translateY(0)';
+          }
+        });
+      }
+
+      // Initial check
+      checkVisibility();
+
+      // Listen for scroll events
+      window.addEventListener('scroll', checkVisibility);
+    });
+    
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      // Array of colors
+      const colors = ['red', 'blue', 'yellow', 'green', 'violet'];
+      
+      // Function to update header color
+      function updateHeaderColor() {
+        const header = document.getElementById('color-animation');
+        const currentColor = header.style.backgroundColor; 
+        const currentIndex = colors.indexOf(currentColor);
+        const nextIndex = (currentIndex + 1) % colors.length;
+        const nextColor = colors[nextIndex];
+        
+        header.style.backgroundColor = nextColor;
+
+        // Call the function again after 2 seconds
+        setTimeout(updateHeaderColor, 2000);
+      }
+
+      // Call the function initially
+      setTimeout(updateHeaderColor, 2000);
+    });
+    
+  </script>
+</body>
+</html>
