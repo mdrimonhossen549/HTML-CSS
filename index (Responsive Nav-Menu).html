@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    
+    .menu-icon {
+      display: none;
+    }
+    
+
+    
+    .navbar-menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .navbar-menu a:hover {
+      background-color: #555;
+    }
+    
+
+    
+    @media screen and (max-width: 768px) {
+      .navbar-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 0;
+      }
+      .navbar-menu{
+        display:none;
+      }
+      .menu-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: right;
+        padding-right: 10px;
+        display:block;
+      }
+      .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-brand">Logo</div>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="navbar-menu" id="navbarMenu">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-times"></i>
+    </div>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Service</a>
+    <a href="#">Team</a>
+    <a href="#">Help</a>
+    
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    var navbarMenu = document.getElementById('navbarMenu');
+    navbarMenu.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
